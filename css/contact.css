@@ -1,0 +1,503 @@
+/* links */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); /* letra digital arredondada*/
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Battambang:wght@100;300&family=Bebas+Neue&family=Cabin&display=swap');
+
+.corVerm{
+    color: red;
+}
+
+.avisoTopo{
+    font-size: .8rem;
+}
+
+/* Barra de tarefas */
+body{
+    margin: 0;
+    background-color: #E8E8DF;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 100px;
+}
+
+header .lamp{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* width: 100px; */
+    height: 6.25rem;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    font-family: 'Cabin';
+    font-size: 1.3rem;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+header ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+header ul li a:hover{
+    color: white;
+}
+
+header ul li a:hover::after{
+    width: 100%;
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* CONTAINER STANDARD */
+.container {
+    display: flex;
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+/* inline navbar */
+.ini::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ini:hover{
+    color: #fff;
+}
+
+.ini:hover::after{
+    width: 100%;
+}
+
+.ser::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ser:hover{
+    color: #fff;
+}
+
+.ser:hover::after{
+    width: 100%;
+}
+
+.sob::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.sob:hover{
+    color: #fff;
+}
+
+.sob:hover::after{
+    width: 100%;
+}
+
+.fc{
+    color: #fff;
+}
+
+.fc::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    
+    height: 3px;
+    width: 100%;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+/* txt entrada */
+.txt{
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Andika New Basic';
+    font-size: 1.3rem;
+    text-align: center;
+    color: #000;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+.txt h1{
+    font-size: 2rem;
+}
+
+.tt{
+    width: 800px;
+}
+
+/* contato */
+.gelo{
+    background-color: #E8E8DF;
+}
+
+.gelo2{
+    background-color: #E8E8DF;
+    margin-bottom: 20px;
+}
+
+.media{
+    display: flex;
+    background-color: #efefe7;
+    height: 260px;
+    padding-bottom: 5px;
+}
+
+.row{
+    padding: 9px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-family: 'Nunito', sans-serif;
+}
+
+input{
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+input textArea{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 1em;
+    font: 1em sans-serif;
+    border: #fff;
+}
+
+.card{
+    width: 30%;
+    flex-wrap: nowrap;
+}
+
+.card2{
+    width: 20%;
+    flex-wrap: nowrap;
+}
+
+.card3{
+    width: 20%;
+    flex-wrap: nowrap;
+}
+
+.tele{
+    width: 500px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.telefone{
+    margin-right: 80px;
+}
+
+.vaz{
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    margin-right: 10px;
+}
+
+.config{
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.men{
+    flex-wrap: nowrap;
+    width: 30%
+}
+
+.textArea{
+    width: 400px;
+    height: 100px;
+}
+
+.ce img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.ca{
+    text-align: end;
+}
+
+.ro{
+    margin: 10px;
+    width: 210px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 110, 255, 80%);
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
+}
+
+.cta{
+    width: 70px;
+    height: 80px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
+}
+
+.cta img{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.h{
+    margin-left: 5px;
+}
+
+.ce button{
+    /* margin: 10px; */
+    padding: 15px;
+    width: 150px;
+    background-color: rgba(0, 110, 255, 80%);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ca{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.ca button{
+    align-items: flex-end;
+}
+
+/* .ce button:hover{
+    background-color: rgb(167, 156, 7);
+} */
+
+/* Quebra de tela */
+
+/* Rodapé */
+/* CONTAINER STANDARD */
+.container {
+    display: flex;
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    height: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Cabin';
+}
+
+footer section p {
+    font-size: 0.9rem;
+}
+
+footer a img {
+    height: 20px;
+}
+
+.pgs{
+    align-items: center;
+    display: flex;
+}
+
+.pgs h2{
+    margin-top: 20px;
+}
+
+.links{
+    margin-left: 400px;
+    display: flex;
+}
+
+.links li{
+    list-style-type: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 50px;
+}
+
+.links a:hover{
+    color: #FFD700;
+}
+
+
+.rodape {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px !important;
+    padding-top: 10px;
+}
+
+.rodape h2 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+hr{
+    width: 100%;
+}
+
+.contato {
+    display: flex;
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.numero {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.numero a {
+    margin-right: 30px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-right: 85px;
+    /* margin-left: 130px; */
+}
+
+.icons::before {
+    content: "";
+    height: 40px;
+    width: 2px;
+    /* margin-right: 2px; */
+    background-color: white;
+    position: relative;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rota {
+    display: flex;
+    width: 50%;
+}
+
+.rota a {
+    margin-right: 20px;
+}
+
+.rota a img {
+    height: 30px;
+    align-items: flex-start;
+}
+
+.direitos {
+    margin-right: 128px;
+}

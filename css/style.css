@@ -1,0 +1,288 @@
+/* all
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+} */
+
+/* Barra de tarefas */
+body {
+    background-color: #1A1A18;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Andika New Basic';
+    min-height: 100vh;
+}
+
+body .principal {
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* inline navbar */
+.ini{
+    color: #fff;
+}
+
+.ini::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    
+    height: 3px;
+    width: 100%;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ser::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ser:hover{
+    color: #fff;
+}
+
+.ser:hover::after{
+    width: 100%;
+}
+
+.sob::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.sob:hover{
+    color: #fff;
+}
+
+.sob:hover::after{
+    width: 100%;
+}
+
+.fc::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.fc:hover{
+    color: #fff;
+}
+
+.fc:hover::after{
+    width: 100%;
+}
+
+
+/* txt ao lado da img */
+.block {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: justify;
+    /* min-height: 30vh; */
+}
+
+.block .txt {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    width: 65%;
+    /* min-height: 900px; */
+}
+
+.txt h1 {
+    font-size: 2.4rem;
+    text-align: justify;
+    align-items: center;
+}
+
+.txt p {
+    font-family: 'Cabin';
+    margin-top: 45px;
+    font-size: 1.2rem;
+}
+
+.block a {
+    /* margin-top: 200px; */
+    color: #000;
+    background-color: #FFD700;
+    text-decoration: none;
+    border-radius: 10px;
+    /* box-shadow: 0 5px 15px rgb(0 0 0 / 80%); */
+    padding: 12px;
+    font-size: 1.1rem;
+    font-family: 'Cabin';
+}
+
+.block a:nth-child(1){
+    padding: 15px 35px;
+}
+
+.block a:nth-child(2){
+    padding: 15px 20px;
+}
+
+.block a:hover {
+    background-color: rgb(255, 214, 0);
+}
+
+.btn-acao{
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 65%;
+
+}
+
+.block img {
+    height: 270px;
+}
+
+.img-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alinhamento{
+    display: flex;
+    align-items: center;
+}
+
+/* nas redes */
+.redes-sociais{
+    display: flex;
+    width: 25%;
+}
+
+.redes-sociais a{
+    display: flex;
+    padding: 10px;
+}
+
+.acompanhe img {
+    height: 20px;
+    transition: 0.6s;
+}
+
+.acompanhe img:hover {
+    transform: scale(1.2);
+}
+
+/* Quebra de tela */
+
+/* blocos */
+.conhecer {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    height: 550px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bloco:nth-child(1) .btn-card{
+    padding-top: 25px;
+}
+
+.conhecer .bloco {
+    margin: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.bloco:nth-child(1){
+    align-items: center;
+}
+
+.conhecer .btn-card{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    margin-top: 20px;
+    height: 170px;
+    width: 260px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+.titulo-card {
+    font-family: 'Andika New Basic';
+    font-size: 1.3rem;
+    color: #000;
+    align-items: center;
+}
+
+.texto-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.texto-card p{
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+#correcao{
+    padding-top: 40px;
+}
+
+#correcao2{
+    padding-top: 40px;
+}
+
+.btn-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-card a{
+    color: #000;
+    background-color: #FFD700;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.1rem;   
+}

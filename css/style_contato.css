@@ -1,0 +1,434 @@
+/* links */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap'); /* letra digital arredondada*/
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Battambang:wght@100;300&family=Bebas+Neue&family=Cabin&display=swap');
+
+.corVerm{
+    color: red;
+}
+
+.avisoTopo{
+    font-size: .8rem;
+}
+
+/* Barra de tarefas */
+body{
+    margin: 0;
+    background-color: #E8E8DF;
+    min-height: 100vh;
+    font-family: 'Cabin';
+}
+
+.iconeBandeira img{
+    height: 30px;
+}
+
+/* HEADER */
+header{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 100px;
+}
+
+header .lamp{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 2px;
+    /* width: 100px; */
+    height: 6.25rem;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    font-family: 'Cabin';
+    font-size: 1.3rem;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+header ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+header ul li a:hover{
+    color: white;
+}
+
+header ul li a:hover::after{
+    width: 100%;
+}
+
+.containerMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* CONTAINER STANDARD */
+.container {
+    display: flex;
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+/* inline navbar */
+.ini::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ini:hover{
+    color: #fff;
+}
+
+.ini:hover::after{
+    width: 100%;
+}
+
+.ser::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ser:hover{
+    color: #fff;
+}
+
+.ser:hover::after{
+    width: 100%;
+}
+
+.sob::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.sob:hover{
+    color: #fff;
+}
+
+.sob:hover::after{
+    width: 100%;
+}
+
+.fc{
+    color: #fff;
+}
+
+.fc::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    
+    height: 3px;
+    width: 100%;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.titulo{
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: 'Cabin';
+    font-size: 1.3rem;
+    text-align: center;
+    color: #000;
+}
+
+/* FORMULÁRIO */
+.form{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 40px 30px; */
+    margin-bottom: 20px;
+}
+
+.formControl{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.formControl label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.formControl input{
+    border: 1px solid #696969;
+    background-color: #D3D3D3;
+    border-radius: 4px;
+    outline: 0;
+    display: block;
+    width: 97%;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.formControl small{
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+}
+.textArea{
+    width: 400px;
+}
+
+.formControl.error input{
+    border: 2px solid #FF0000;
+}
+
+.formControl.error small{
+    visibility: visible;
+    color: #FF0000;
+    position: relative;
+}
+
+.alinhamentoTextAreaButton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.alinhamentoTextAreaButton .formControl{
+    width: 70%;
+    margin-bottom: 0;
+}
+
+.alinhamentoTextAreaButton .formControl input{
+    width: 82%;
+    height: 85px;
+}
+
+.alinhamentoRecaptchButton{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.alinhamentoRecaptchButton button{
+    padding: 15px;
+    width: 150px;
+    background-color: rgba(0, 110, 255, 80%);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.recaptcha{
+    background-color: #D3D3D3;
+    width: 200px;
+    height: 75px;
+}
+
+.recaptcha img{
+    height: 50px;
+    float: right;
+    margin-top: 13px;
+}
+
+
+/* Quebra de tela */
+
+/* Rodapé */
+/* CONTAINER STANDARD */
+.container {
+    display: flex;
+    max-width: 992px;
+    width: 100%;
+    /* margin: 0 auto; */
+    min-width: 320px;
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    height: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Cabin';
+}
+
+footer section p {
+    font-size: 0.9rem;
+}
+
+footer a img {
+    height: 20px;
+}
+
+.pgs{
+    align-items: center;
+    display: flex;
+}
+
+.pgs h2{
+    margin-top: 20px;
+}
+
+.links{
+    margin-left: 400px;
+    display: flex;
+}
+
+.links li{
+    list-style-type: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 50px;
+}
+
+.links a:hover{
+    color: #FFD700;
+}
+
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px !important;
+    padding-top: 10px;
+}
+
+.rodape h2 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+hr{
+    width: 100%;
+}
+
+.contato {
+    display: flex;
+    font-size: 1.3rem;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.numero {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.numero a {
+    margin-right: 30px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-right: 85px;
+    /* margin-left: 130px; */
+}
+
+.icons::before {
+    content: "";
+    height: 40px;
+    width: 2px;
+    /* margin-right: 2px; */
+    background-color: white;
+    position: relative;
+}
+
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.rota {
+    display: flex;
+    width: 50%;
+}
+
+.rota a {
+    margin-right: 20px;
+}
+
+.rota a img {
+    height: 30px;
+    align-items: flex-start;
+}
+
+.direitos {
+    margin-right: 128px;
+}

@@ -1,0 +1,174 @@
+/* RESET GERAL */
+
+
+body {
+    min-height: 100vh;
+    background-color: #E8E8DF;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Andika New Basic';
+}
+
+body img {
+    height: 100px;
+}
+
+/* inline navbar */
+.ini::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ini:hover{
+    color: #fff;
+}
+
+.ini:hover::after{
+    width: 100%;
+}
+
+.ser::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.ser:hover{
+    color: #fff;
+}
+
+.ser:hover::after{
+    width: 100%;
+}
+
+.sob{
+    color: #fff;
+}
+
+.sob::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    
+    height: 3px;
+    width: 100%;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.fc::after{
+    content: "";
+    position: absolute;
+    background-color: #FFD700;
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+.fc:hover{
+    color: #fff;
+}
+
+.fc:hover::after{
+    width: 100%;
+}
+
+/* */
+
+/* TEXTO QUEM SOMOS */
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.quem-somos {
+    margin: 150px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 100%;
+    /* height: 70vh; */
+}
+
+.quem-somos h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.quem-somos p {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+
+/* EQUIPE */
+.equipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 90vh; */
+    width: 100%;
+}
+
+.membros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.membros:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.membros:nth-child(2) img {
+    width: 180px;
+}
+
+.colaborador {
+    display: flex;
+    flex-direction: column;
+}
+
+.colaborador img {
+    height: 250px;
+}
+
+.colaborador p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.7rem;
+}
+
+.equipe-colaborador {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+

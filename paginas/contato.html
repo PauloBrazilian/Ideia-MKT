@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IDEIA-MKT e Assessoria</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style_contato.css">
+    <!--<link rel="stylesheet" href="../css/headerFooter.css">-->
+
+</head>
+
+<body>
+
+    <header>
+        <section class="container">
+            <a href="../index.html">
+                <img class="lamp" src="../img/Logo/Logo header.jpeg" alt="" srcset="">
+            </a>
+            <ul>
+                <li>
+                    <a href="../index.html" class="ini">Inicio</a>
+                </li>
+                <li>
+                    <a href="../paginas/servicos.html" class="ser">Serviços</a>
+                </li>
+                <li>
+                    <a href="../paginas/sobre.html" class="sob">Sobre</a>
+                </li>
+                <li>
+                    <a href="../paginas/contato.html" id="linkfaleconosco" class="fc">Fale Conosco</a>
+                </li>
+                <a href="contact.html" class="iconeBandeira"><img src="../img/Icones/estados-unidos-da-america.png" alt=""></a>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <div class="titulo">
+                <h1>Fale Conosco</h1>
+                <p>Preencha os campos abaixo para solicitar um orçamento ou enviar uma mensagem sobre outros assuntos.
+                </p>
+            </div>
+        </section>
+        <form class="container form" id="form">
+            <span class="corVerm avisoTopo">* Campos obrigatórios</span>
+            <div class="formControl">
+                <label for="name">Nome Completo <span class="corVerm">*</span></label>
+                <input type="text" id="name" placeholder="Digite seu nome">
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="formControl">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" placeholder="Digite o nome da empresa a qual trabalha (Opcional)">
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="formControl">
+                <label for="cargo">Cargo/Ocupação</label>
+                <input type="text" id="cargo" placeholder="Digite seu cargo ou ocupação (Opcional)">
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="formControl">
+                <label for="email">E-mail <span class="corVerm">*</span></label>
+                <input type="email" id="email" placeholder="Digite seu melhor email para contato. Ex: email@email.com">
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="formControl">
+                <label for="telefone">Telefone <span class="corVerm">*</span></label>
+                <input type="text" id="telefone" placeholder="Digite um telefone para contato. Ex: (16) 99999-9999">
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="formControl">
+                <label for="assunto">Assunto <span class="corVerm">*</span></label>
+                <input type="text" id="assunto" placeholder="Ex: Solicitar orçamento de Marketing Digital">
+                <small>Mensagem de erro</small>
+            </div>
+            <div class="alinhamentoTextAreaButton">
+                <div class="formControl">
+                    <label for="message">Assunto <span class="corVerm">*</span></label>
+                    <input class="textArea" type="textArea" row=6 id="message" placeholder="Como podemos ajudar?">
+                    <small>Mensagem de erro</small>
+                </div>
+                <div class="alinhamentoRecaptchButton">
+                    <div class="recaptcha">
+                        <img src="../img/captcha.png" alt="">
+                    </div>
+                    <button type="submit" id="btnEnviar">ENVIAR</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <section class="container rodape">
+            <h2>Ideia - Marketing e Assessoria</h2>
+            <hr>
+            <div class="pgs">
+                <h2>Acesso rápido</h2>
+                <ul class="links">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../paginas/servicos.html">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="../paginas/sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="../paginas/contato.html" id="linkfaleconosco">Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="contato info">
+                <div class="numero">
+                    <a href="#">
+                        <img src="../img/Icones/img whatsapp-sem fundo.png" alt="" srcset="">
+                    </a>
+                    <p>(99) 9 9999-9999</p>
+                </div>
+                <div class="icons">
+                    <p>Acompanhe nossas redes socias</p>
+                    <a href="#">
+                        <img src="../img/Icones/img face-sem fundo.png" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="../img/Icones/img insta-sem fundo.png" alt="" srcset="">
+                    </a>
+                    <a href="#">
+                        <img src="../img/Icones/img youtube-sem fundo.png" alt="" srcset="">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="contato local">
+                <div class="rota">
+                    <a href="#">
+                        <img src="../img/Icones/Img point-sem fundo.png" alt="" srcset="">
+                    </a>
+                    <p>Taguaritinga, Av.Itamaracá,
+                        <br> 585 - Portal Itamaracá
+                    </p>
+                </div>
+                <div class="direitos">
+                    <p>© 2022 Ideia - Marketing e Assessoria. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- JS -->
+    <!-- <link rel="scriptsheet" href="js/script.js"> -->
+    <script src="../js/validaFormulario.js"></script>
+
+</body>
+
+</html>
